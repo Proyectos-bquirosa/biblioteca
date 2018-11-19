@@ -43,10 +43,10 @@ app.use( function(req, res, next) {
 });
 
 //Exportamos todas las rutas dentro del index.js
-// const usuarios = require('./components/usuarios/usuarios.route');
+const users = require('./components/users/users.route.js');
 
 //Le indicamos que le de acceso externo a las rutas inicializadas
-// app.use('/api', usuarios);
+app.use('/api', users);
 
 // Se guarda todo lo que se ha realizado
 module.exports = app;
